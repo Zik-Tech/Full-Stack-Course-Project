@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Zik-Tech">
+    <link rel="icon" href="https://ps.w.org/custom-event-tickets/assets/icon-256x256.png?rev=2485938">
+    <title>Table</title>
+</head>
+<body>
+
+    <style>
+        h1 {
+            font-size: 40px;
+        }
+        * {
+            margin-left: 10px;
+            font-size: large;
+            font-weight: bolder;
+            box-sizing: border-box;
+        }
+        table, thead, tr, td {
+            text-align: center;
+            padding: 5px;
+            border: 2px solid black;
+        }
+    </style>
+
+    <h1>Basic HTML Table</h1>
+    <br>
+
+    <table>
+       <thead>
+        <tr>
+            <td>Level1</td>
+            <td>Level2</td>
+            <td>Level3</td>
+            <td>Info</td>
+            <td>Name</td>
+        </tr>
+       </thead>
+       <tbody>
+        <tr>
+            <td rowspan="6">System</td>
+            <td rowspan="4">System Apps</td>
+            <td rowspan="3">SystemEnv</td>
+            <td>App Test</td>
+            <td>foo</td>
+        </tr>
+        <tr>
+            <td>App Memory</td>
+            <td>foo</td>
+        </tr>
+        <tr>
+            <td>App Test</td>
+            <td>bar</td>
+        </tr>
+        <tr>
+            <td>SystemEnv2</td>
+            <td>App Test</td>
+            <td>bar</td>
+        </tr>
+        <tr>
+            <td rowspan="2">System Memory</td>
+            <td rowspan="2">Memory Test</td>
+            <td>Memory Func</td>
+            <td>foo</td>
+        </tr>
+        <tr>
+            <td>Apps Test</td>
+            <td>foo</td>
+        </tr>
+       </tbody>
+    </table>
+</body>
+</html>
