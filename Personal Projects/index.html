@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Zik-Tech">
+    <meta name="description" content="An image slider">
+    <link rel="stylesheet" href="./styles.css">
+    <title>SlideShow</title>
+</head>
+<body>
+    
+    <!--Nav Button (prev, next)-->
+    <div class="navigation">
+        <div class="prev nav-btn"><</div>
+        <div class="next nav-btn">></div>
+    </div>
+
+    <div class="carousel-container">
+  
+        <div class="carousel">
+
+            <div class="item main">
+                <img src="./img/001.png" alt="Code logo" />
+                <div class="caption">1st caption</div>
+            </div>
+
+            <div class="item">
+                <img src="./img/002.png" alt="Full stack web dev" />
+                <div class="caption">2nd caption</div>
+            </div>
+
+            <div class="item">
+                <img src="./img/003.png" alt="Coders Live Cycle" />
+                <div class="caption">3rd caption</div>
+            </div>
+
+            <div class="item">
+                <img src="./img/004.png" alt="Code motivation" />
+                <div class="caption">4th caption</div>
+            </div>
+
+            <div class="item">
+                <img src="./img/005.png" alt="The Programmer Behinde This" />
+                <div class="caption">5th caption</div>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        const prev = document.querySelector('.prev');
+        const next = document.querySelector('.next');
+        const images = document.querySelector('.carousel').children;
+        const totalImages = images.length;
+        let index = 0;
+
+
+        prev.addEventListener('click', () => {
+        nextImage('next');
+        })
+        next.addEventListener('click', () => {
+        nextImage('prev');
+        })
+
+
+        function nextImage(direction) {
+        if(direction == 'next') {
+            index++;  // increase by 1, Global variable
+            if(index == totalImages) {
+            index = 0;
+            }
+        } else {
+            if(index == 0) {
+            index = totalImages - 1;
+            } else {
+            index--; // Backwards by 1
+            }
+        }
+        
+        for(let i = 0; i < images.length; i++) {
+            images[i].classList.remove('main');
+        }
+        images[index].classList.add('main');
+        }
+    </script>
+</body>
+</html>
