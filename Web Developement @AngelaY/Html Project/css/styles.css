@@ -1,0 +1,54 @@
+body {
+    background-color:aqua;
+    font-weight: bolder;
+    font-family: 'Courier New', Courier, monospace;
+}
+h1, h2, h3{
+    color: black;
+}
+hr {
+    height: 10px;
+    border-color: white;
+    border-style: dotted none none;
+    border-width: 5px;
+    width: 5%;
+}
+img {
+    border-radius: 50%;
+}
+td {
+    text-transform: uppercase;
+    text-align: center;
+}
+input {
+    margin: 2px;
+    text-transform: lowercase;
+}
+figure {
+    margin: -1px;
+    display: grid;
+    width: 50%;
+}
+figcaption, label, p, dl {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: larger;
+}
+textarea, input {
+    text-transform: lowercase;
+    background-color: black;
+    color: whitesmoke;
+}
+::placeholder {
+    color: whitesmoke;
+}
+#sub_res {
+    width: fit-content;
+    background-color: black;
+    border:1px solid white;
+    border-radius: 5px;
+    
+}
+#sub_res > input {
+    border:1px solid white;
+}

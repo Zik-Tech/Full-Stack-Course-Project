@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <h1>My Contact</h1>
+    <div>
+        <p>Email: <a href="mailto:isaacola728@gmail.com">isaacola728@gmail.com</a></p>
+        <p id="tel">
+            <dl>
+                <dt>Tel No:</dt>
+                <dd>
+                    <li><a href="tel:+2347084479699">+2347084479699</a></li>
+                    <li><a href="tel:+2347049064358">+2347084479699</a></li>
+                </dd>
+            </dl>
+        </p>
+    </div>
+    <section>
+        <h2>Simple Survey</h2>
+        <form action="mailto:isaacola728@gmail.com" method="post">
+            <label for="name">Name: </label>
+            <input name="name" id="name" type="text" placeholder="Your name" required><br>
+            <label for="mail">Email: </label>
+            <input name="mail" id="mail" type="email" placeholder="Your Email"><br>
+            <label for="DOB">Date Of Birth:</label>
+            <input name="DOB" id="DOB" type="date" ><br>
+            <label for="fav-color">Your favourite color: </label>
+            <input name="fav-color" id="fav-color" type="color"><br>
+            <label for="Fav-img">Your Pics: </label>
+            <input name="fav-img" id="fav-img" type="file"><br>
+            <label for="Rating">Rate this Website: </label>
+            <input name="Rating" id="rating" type="range"><br><br>
+            <figure id="comment">
+                <figcaption>Comment:</figcaption>
+                <textarea name="Message" id="Message" cols="25" rows="8" placeholder="Your Message To Me"></textarea>
+            </figure><br>
+            <div id="sub_res">
+                <input type="submit">
+                <input type="reset">
+            </div>
+        </form>
+    </section>
+</body>
+</html>
